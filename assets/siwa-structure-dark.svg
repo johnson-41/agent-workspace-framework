@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1080" viewBox="0 0 1400 1080" role="img" aria-label="SIWFA v1.3 结构规范图：用户、SI 助手、规则中枢 Workspace、项目统一存放于 Workspace/Project、两份账本与归档闭环">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#7A8B95"/>
+    </marker>
+    <marker id="arrow-acc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#7BC49B"/>
+    </marker>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#2A353D"/>
+    </pattern>
+    <style>
+      .t-title{font-family:"Noto Sans CJK SC","PingFang SC",sans-serif;font-size:30px;font-weight:700;fill:#E8EEF2}
+      .t-sub{font-family:"Noto Sans Mono CJK SC","SF Mono",monospace;font-size:15px;fill:#8FA2AD}
+      .t-node{font-family:"Noto Sans CJK SC","PingFang SC",sans-serif;font-size:19px;font-weight:700;fill:#E8EEF2}
+      .t-nodesub{font-family:"Noto Sans CJK SC","PingFang SC",sans-serif;font-size:13.5px;fill:#9FB0BA}
+      .t-doc{font-family:"Noto Sans Mono CJK SC","SF Mono",monospace;font-size:16px;fill:#E8EEF2}
+      .t-docsub{font-family:"Noto Sans CJK SC","PingFang SC",sans-serif;font-size:12.5px;fill:#9FB0BA}
+      .t-group{font-family:"Noto Sans CJK SC","PingFang SC",sans-serif;font-size:14px;font-weight:700;fill:#7BC49B}
+      .t-edge{font-family:"Noto Sans CJK SC","PingFang SC",sans-serif;font-size:12.5px;fill:#7A8B95}
+      .t-legend{font-family:"Noto Sans CJK SC","PingFang SC",sans-serif;font-size:13px;fill:#9FB0BA}
+      .t-foot-h{font-family:"Noto Sans CJK SC","PingFang SC",sans-serif;font-size:14px;font-weight:700;fill:#E8EEF2}
+      .t-foot{font-family:"Noto Sans CJK SC","PingFang SC",sans-serif;font-size:12.5px;fill:#9FB0BA}
+    </style>
+  </defs>
+
+  <rect width="1400" height="1080" fill="#141B21"/>
+  <rect x="24" y="96" width="1352" height="884" rx="18" fill="#1B242C" stroke="#2C3942"/>
+  <rect x="44" y="116" width="1312" height="844" rx="14" fill="url(#dots)"/>
+
+  <!-- 标题 -->
+  <text x="56" y="58" class="t-title">SIWFA 工作区框架规范</text>
+  <text x="56" y="82" class="t-sub">v1.3 · 2026-10-26 · 项目统一存放于 Workspace/Project/</text>
+  <g>
+    <rect x="1120" y="36" width="236" height="34" rx="17" fill="#1E3A2D" stroke="#31503F"/>
+    <circle cx="1140" cy="53" r="5" fill="#7BC49B"/>
+    <text x="1154" y="58" font-family="Noto Sans Mono CJK SC,monospace" font-size="13" fill="#7BC49B">版本 v1.3 ｜ 2026-10-26</text>
+  </g>
+
+  <!-- 顶部：用户 → SI 助手 → 项目工作区 -->
+  <rect x="96" y="196" width="200" height="92" rx="12" fill="#232E37" stroke="#384852"/>
+  <text x="126" y="236" class="t-node">用户</text>
+  <text x="126" y="260" class="t-nodesub">提出项目需求</text>
+
+  <path d="M 300 242 H 452" stroke="#7A8B95" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <rect x="336" y="222" width="58" height="20" rx="10" fill="#FFFFFF" stroke="#2A353D"/>
+  <text x="352" y="237" class="t-edge">需求</text>
+
+  <rect x="456" y="180" width="420" height="124" rx="14" fill="#1E3A2D" stroke="#4F9C74" stroke-width="1.6"/>
+  <text x="486" y="222" class="t-node">SI 助手</text>
+  <text x="486" y="250" class="t-nodesub">Claude · Codex · GPT · Gemini</text>
+  <text x="486" y="274" class="t-nodesub">读规则 → 问背景 → 复核理解 → 执行</text>
+
+  <path d="M 880 242 H 1032" stroke="#7BC49B" stroke-width="1.8" marker-end="url(#arrow-acc)"/>
+  <rect x="904" y="222" width="96" height="20" rx="10" fill="#FFFFFF" stroke="#31503F"/>
+  <text x="914" y="237" class="t-edge">按流程执行</text>
+
+  <!-- 项目工作区 -->
+  <rect x="1036" y="168" width="304" height="148" rx="14" fill="#2A2340" stroke="#7D68AB" stroke-width="1.6"/>
+  <text x="1062" y="206" class="t-node">项目工作区</text>
+  <text x="1062" y="232" class="t-doc">Workspace/Project/Project-NNN</text>
+  <text x="1062" y="258" class="t-nodesub">背景 · 产出 · Token 核算</text>
+  <text x="1062" y="282" class="t-nodesub">修订窗关闭后归档进 Archive/</text>
+
+  <!-- 技能库 -->
+  <rect x="516" y="84" width="300" height="64" rx="12" fill="#232E37" stroke="#384852"/>
+  <text x="546" y="112" class="t-node" font-size="16">技能库</text>
+  <text x="610" y="112" class="t-nodesub">siwfa · ste · blindspot-audit</text>
+  <text x="546" y="133" class="t-nodesub">本地技能库 + 外部择优汰旧</text>
+  <path d="M 666 148 V 176" stroke="#7A8B95" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <text x="676" y="168" class="t-edge">技能策展</text>
+
+  <!-- 规则中枢分组 -->
+  <rect x="96" y="352" width="1244" height="318" rx="16" fill="#241E14" stroke="#5A4A2A" stroke-width="1.4"/>
+  <rect x="120" y="338" width="196" height="28" rx="8" fill="#C79A3C"/>
+  <text x="134" y="357" class="t-group">Workspace/　规则中枢</text>
+
+  <!-- 六份核心文档 3×2 -->
+  <!-- 第一行 -->
+  <rect x="124" y="392" width="370" height="84" rx="12" fill="#2A2340" stroke="#7D68AB"/>
+  <text x="148" y="428" class="t-doc">agent.md</text>
+  <text x="148" y="454" class="t-docsub">Agent 最高优先级指令 · 解析流 · 汇报规范</text>
+
+  <rect x="516" y="392" width="390" height="84" rx="12" fill="#2A2340" stroke="#7D68AB"/>
+  <text x="540" y="428" class="t-doc">全局工作台.md</text>
+  <text x="540" y="454" class="t-docsub">规则层级 · 目录结构 · 行为铁律 13 条</text>
+
+  <rect x="928" y="392" width="388" height="84" rx="12" fill="#2A2340" stroke="#7D68AB"/>
+  <text x="952" y="428" class="t-doc">复利与踩坑.md</text>
+  <text x="952" y="454" class="t-docsub">经验资产 · 只增不删</text>
+
+  <!-- 第二行 -->
+  <rect x="124" y="494" width="370" height="84" rx="12" fill="#2A2340" stroke="#7D68AB"/>
+  <text x="148" y="530" class="t-doc">新项目流程.md</text>
+  <text x="148" y="556" class="t-docsub">8 步 SOP · 三档模式 · 修订窗边界</text>
+
+  <rect x="516" y="494" width="390" height="84" rx="12" fill="#2A2340" stroke="#7D68AB"/>
+  <text x="540" y="530" class="t-doc">工程的原则.md</text>
+  <text x="540" y="556" class="t-docsub">代码任务执行基线 · 7 条原则</text>
+
+  <rect x="928" y="494" width="388" height="84" rx="12" fill="#2A2340" stroke="#7D68AB"/>
+  <text x="952" y="530" class="t-doc">方法论日志.md</text>
+  <text x="952" y="556" class="t-docsub">规则版本演变 · 可回退</text>
+
+  <text x="124" y="620" class="t-docsub">新建工作区时，同时创建 Workspace/ 与 Workspace/Project/；此后项目一律放 Project/ 内，Workspace/ 只留规则与备份。</text>
+
+  <!-- 从 SI 助手指向规则中枢 -->
+  <path d="M 500 304 V 348" stroke="#7A8B95" stroke-width="1.6" fill="none" marker-end="url(#arrow)"/>
+  <rect x="512" y="316" width="76" height="20" rx="10" fill="#FFFFFF" stroke="#2A353D"/>
+  <text x="524" y="331" class="t-edge">启动必读</text>
+
+  <!-- 收尾回写 -->
+  <path d="M 1188 316 V 340 H 1150 V 388" stroke="#A98FE0" stroke-width="1.6" stroke-dasharray="5 4" fill="none" marker-end="url(#arrow)"/>
+  <rect x="1122" y="324" width="76" height="20" rx="10" fill="#FFFFFF" stroke="#2A353D"/>
+  <text x="1134" y="339" class="t-edge">收尾回写</text>
+
+  <!-- 底部：两份账本 + 副本同步 -->
+  <rect x="96" y="700" width="612" height="228" rx="16" fill="#161E25" stroke="#2C3942"/>
+  <rect x="120" y="688" width="150" height="26" rx="8" fill="#26343E"/>
+  <text x="132" y="706" class="t-group" fill="#8FC0DE">根目录与归档</text>
+  <rect x="124" y="724" width="260" height="76" rx="10" fill="#1E2C36" stroke="#3A5266"/>
+  <text x="144" y="754" class="t-doc">项目台账.md</text>
+  <text x="144" y="778" class="t-docsub">编号登记 · 状态 · 交付与修订截止</text>
+  <rect x="400" y="724" width="260" height="76" rx="10" fill="#1E2C36" stroke="#3A5266"/>
+  <text x="420" y="754" class="t-doc">理解日志.md</text>
+  <text x="420" y="778" class="t-docsub">理解复核 · 1–4 数字确认</text>
+  <rect x="124" y="816" width="260" height="76" rx="10" fill="#1E3A2D" stroke="#4F9C74"/>
+  <text x="144" y="846" class="t-doc">scripts/sync_siwfa.sh</text>
+  <text x="144" y="870" class="t-docsub">单真源同步 · 生成当日备份</text>
+  <rect x="400" y="816" width="260" height="76" rx="10" fill="#3A2326" stroke="#8A4F4C"/>
+  <text x="420" y="846" class="t-doc">Workspace/Project/Archive/</text>
+  <text x="420" y="870" class="t-docsub">已归档项目 · 只读</text>
+
+  <rect x="728" y="700" width="612" height="228" rx="16" fill="#161E25" stroke="#2C3942"/>
+  <rect x="752" y="688" width="112" height="26" rx="8" fill="#26343E"/>
+  <text x="764" y="706" class="t-group" fill="#8FC0DE">三种模式</text>
+  <g>
+    <rect x="756" y="724" width="556" height="56" rx="10" fill="#141B21" stroke="#E2E8EC"/>
+    <text x="776" y="746" class="t-foot-h">简单模式</text>
+    <text x="776" y="768" class="t-foot">背景 + 直接执行呈现结果，明确的小任务</text>
+    <rect x="756" y="790" width="556" height="56" rx="10" fill="#141B21" stroke="#E2E8EC"/>
+    <text x="776" y="812" class="t-foot-h">阶梯模式（默认）</text>
+    <text x="776" y="834" class="t-foot">背景 + 各环节可跳跃，未答复则全执行</text>
+    <rect x="756" y="856" width="556" height="56" rx="10" fill="#141B21" stroke="#E2E8EC"/>
+    <text x="776" y="878" class="t-foot-h">思考模式</text>
+    <text x="776" y="900" class="t-foot">背景 + 流程完整执行，战略级或需求模糊</text>
+  </g>
+
+  <!-- 图例 -->
+  <g>
+    <circle cx="108" cy="962" r="6" fill="#1E3A2D" stroke="#4F9C74"/>
+    <text x="122" y="967" class="t-legend">规则与技能</text>
+    <circle cx="238" cy="962" r="6" fill="#2A2340" stroke="#7D68AB"/>
+    <text x="252" y="967" class="t-legend">核心文档与项目</text>
+    <circle cx="398" cy="962" r="6" fill="#1E2C36" stroke="#3A5266"/>
+    <text x="412" y="967" class="t-legend">账本与脚本</text>
+    <circle cx="522" cy="962" r="6" fill="#3A2326" stroke="#8A4F4C"/>
+    <text x="536" y="967" class="t-legend">归档（只读）</text>
+    <text x="1252" y="967" class="t-legend" text-anchor="end">源文件：assets/siwa-structure-light.svg ｜ 深色版 siwa-structure-dark.svg</text>
+  </g>
+</svg>

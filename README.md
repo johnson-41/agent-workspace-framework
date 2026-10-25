@@ -32,7 +32,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/siwa-structure-dark.png">
-  <img alt="SIWFA 结构规范图：用户 → SI 助手 → 项目工作区；Workspace/ 规则中枢含六份核心文档；收尾经验回写" src="assets/siwa-structure-light.png">
+  <img alt="SIWFA v1.3 结构规范图：用户 → SI 助手 → 项目工作区；Workspace/ 规则中枢含六份核心文档；全部项目存放于 Workspace/Project/，收尾归档并回写经验；根目录放项目台账、理解日志与同步脚本" src="assets/siwa-structure-light.png">
 </picture>
 
 ```
